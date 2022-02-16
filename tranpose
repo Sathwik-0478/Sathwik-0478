@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+int a,b,i,j;
+scanf("%d%d",&a,&b);
+int m[a][b];
+int n[b][a];
+for(i=0;i<a;i++){
+	for(j=0;j<b;j++){
+		scanf("%d",&m[i][j]);
+	}
+}
+for(i=0;i<a;i++){
+	for(j=0;j<b;j++){
+	n[j][i]=m[i][j];
+	}
+}
+printf("\n");
+for(i=0;i<b;i++){
+	for(j=0;j<a;j++){
+		printf("%d ",n[i][j]);
+	}
+printf("\n");
+}
+
+	
+}
